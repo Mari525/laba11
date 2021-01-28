@@ -1,8 +1,3 @@
-/* * {
-	margin: 0;
-	padding: 0;
-} */
-
 body {
 	background-color: darkblue;
 	color: white;
@@ -84,16 +79,6 @@ li:nth-child(6) {
 	list-style: disc;
 }
 
-/* li:first-child a:hover {
-	text-transform: uppercase;
-	text-decoration: none;
-	color: lightpink;
-} */
-
-/* li:nth-child(6) a:hover {
-	color: yellow;
-	border: 3px solid yellow;
-} */
 
 table {
 	margin-bottom: 80px;
@@ -156,28 +141,15 @@ button {
 	column-rule: 5px dotted darkmagenta;
 }
 
-.linear-gr {
-	background: linear-gradient(to top left, #41008b, #ff00ff);
-	height: 200px;
-	width: 400px;
-	float: left;
-	margin-bottom: 200px;
-	transition: all 1.5s ease;
+#changeColor,
+#css {
+	width: 300px;
+	height: 100px;
+	border: 2px solid white;
+	margin-top: 10px;
 }
 
-.linear-gr:hover {
-	transform: scaleX(-1);
+.darkmagenta {
+	background-color: darkmagenta;
 }
 
-.radial-gr {
-	height: 200px;
-	width: 400px;
-	float: right;
-	background: radial-gradient(at bottom, #ff5100, #fbff00);
-	transition: 0.5s ease-out;
-	margin-bottom: 200px;
-}
-
-.radial-gr:hover {
-	transform: skewY(50deg);
-}

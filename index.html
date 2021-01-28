@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>The best personal page ever</title>
+    <link href="jquery/jquery-ui.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jquery/external/jquery/jquery.js"></script>
+    <script src="jquery/jquery-ui.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
@@ -19,8 +22,6 @@
         </nav>
     </header>
     <main>
-        <!-- встроенные -->
-        <!-- <section style="background-color: black;"></section> -->
         <section>
             <div class="photo-block">
                 <img src="img/img.jpg" alt="Моя фотография" width="400" class="photo">
@@ -67,10 +68,12 @@
                 </tr>
             </table>
             <a href="page.html" target="_blank"><img src="img/polyjpg.jpg" alt="логотип мосполитеха" height="100"></a>
-            <span>&lt;&lt;&lt; нажмите сюда для перехода на другую страницу</span>
+            <span id="hide">&lt;&lt;&lt; нажмите сюда для перехода на другую страницу</span>
+            <span id="show">Я родился!</span>
         </section>
         <section>
             <h2>Расскажите о себе</h2>
+            <button type="button" id="slide">Нажмите, чтобы показать/скрыть форму</button>
             <form action="#" method="POST">
                 <fieldset>
                     <legend>Кто вы?</legend>
@@ -100,8 +103,13 @@
                     Краткая характеристика: крупная голова, большие круглые глаза спереди головы, клюв короткий, хищный.
                 </p>
             </div>
-            <div class="linear-gr"></div>
-            <div class="radial-gr"></div>
+        </section>
+        <section>
+            <button type="button" id="btnChange">Тык</button>
+            <div id="changeColor"></div>
+            <div id="css"></div>
+            <br>
+            <div id="datepicker"></div>
         </section>
        
     </main>
