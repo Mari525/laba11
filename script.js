@@ -32,6 +32,10 @@ $(document).ready(function() {
 		//css()
 		$(this).css("background-color", "red").draggable()
 	});
+	//wrap(), filter()
+	$(".bold").wrap("<div class='div_wrap'></div>")
+	.filter(".bolder")
+	.wrap("<div class='div_wrap'></div>")
 	//datepicker()
 	$("#datepicker").datepicker({
 		inline: true

@@ -153,3 +153,9 @@ button {
 	background-color: darkmagenta;
 }
 
+.div_wrap {
+    border: 3px magenta solid;
+    margin: 20px;
+	padding: 3px;
+	text-align: center;
+}
